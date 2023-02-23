@@ -1,0 +1,21 @@
+_id: req_wrk_aef9eca69f284518b83dbd1575d14b9d4a381941
+type: Request
+parentId: wrk_aef9eca69f284518b83dbd1575d14b9d
+modified: 1676541144550
+created: 1625787044247
+url: "{{ _.proxy_path }}/blogs"
+name: Get blogs
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1625787044247
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,21 @@
+_id: req_wrk_aef9eca69f284518b83dbd1575d14b9dd2145cb4
+type: Request
+parentId: wrk_aef9eca69f284518b83dbd1575d14b9d
+modified: 1625787044245
+created: 1625787044245
+url: "{{ base_url }}/blogs/{{ id }}"
+name: Get a blog by id
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1625787044245
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

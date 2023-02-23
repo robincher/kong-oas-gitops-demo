@@ -1,0 +1,38 @@
+_id: req_30f9a6bdc1d94b1499131c1c0de2e441
+type: Request
+parentId: fld_e4083f55bd86459c8a9ff7b9919e119d
+modified: 1659717325764
+created: 1625787197707
+url: "{{ base_url}}"
+name: Add Blog Entry
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"text": "junque"
+    }
+parameters: []
+headers:
+  - id: pair_f48ca16c8d1647d8a184875151a03f8d
+    name: host
+    value: blog-service
+    description: ""
+  - name: Content-Type
+    value: application/json
+    id: pair_8ec04a11d8774fd596dbb5443943b389
+authentication:
+  type: basic
+  useISO88591: false
+  disabled: false
+  username: "{{ _.kong_username }}"
+  password: "{{ _.kong_password }}"
+metaSortKey: -1625787197707
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

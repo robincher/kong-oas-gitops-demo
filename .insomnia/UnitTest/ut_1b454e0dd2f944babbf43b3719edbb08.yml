@@ -1,0 +1,26 @@
+_id: ut_1b454e0dd2f944babbf43b3719edbb08
+type: UnitTest
+parentId: uts_d674c68b57b64e2ab440e04de55f5a93
+modified: 1636735250563
+created: 1625787962644
+requestId: req_42396191f60343cfb120291f6104a341
+name: OIDC
+code: >-
+  
+  const response1 = await insomnia.send();
+
+  const body = JSON.parse(response1.data);
+
+
+  let _ = expect(body.data).to.not.be.empty;
+
+
+  let result = body.data.find( (item, index, array) => {
+  	if (item.name == 'openid-connect' && item.enabled && item.config.issuer == 'https://konghq.okta.com') {
+  		return true
+  	}
+  	return false
+  })
+
+
+  _ = expect(result, "OpenID Connect plugin").to.not.be.undefined

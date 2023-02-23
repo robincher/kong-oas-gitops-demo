@@ -1,0 +1,23 @@
+on:
+  push: 
+    branches:
+      - 'master'
+    paths:
+      - 'workspaces/**'
+
+jobs:
+  deploy_devportal:
+    runs-on: ubuntu-latest
+    name: Portal Deploy
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Setup node
+      uses: actions/setup-node@v2.2.0
+      with:
+        node-version: "12"
+    - name: Install Portal CLI
+      run: npm install -g kong-portal-cli
+    - name: Deploy Dev Portal
+      run: |
+        portal -P -D deploy default

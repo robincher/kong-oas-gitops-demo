@@ -1,0 +1,16 @@
+_id: env_fb99feedda0b3c99b4e093497e03bd770610cb27
+type: Environment
+parentId: wrk_aef9eca69f284518b83dbd1575d14b9d
+modified: 1659717311433
+created: 1625776793434
+name: Base Environment
+data:
+  base_url: "{{ host }}{{ base_path }}"
+  admin_api_url: "{{ admin_api_host }}"
+dataPropertyOrder:
+  "&":
+    - base_url
+    - admin_api_url
+color: null
+isPrivate: false
+metaSortKey: 1625776793434

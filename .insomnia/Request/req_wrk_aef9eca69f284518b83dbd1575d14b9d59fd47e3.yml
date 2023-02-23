@@ -1,0 +1,21 @@
+_id: req_wrk_aef9eca69f284518b83dbd1575d14b9d59fd47e3
+type: Request
+parentId: wrk_aef9eca69f284518b83dbd1575d14b9d
+modified: 1625786945284
+created: 1625786945284
+url: "{{ base_url }}/blogs"
+name: Add a blog
+description: ""
+method: POST
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1625786945284
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

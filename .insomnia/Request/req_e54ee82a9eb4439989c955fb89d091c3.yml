@@ -1,0 +1,30 @@
+_id: req_e54ee82a9eb4439989c955fb89d091c3
+type: Request
+parentId: fld_e4083f55bd86459c8a9ff7b9919e119d
+modified: 1659717322078
+created: 1625787055832
+url: "{{ base_url }}"
+name: List All Blog Entries
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_1976cc32d0464b94a81d73ab1292e07a
+    name: host
+    value: blog-service
+    description: ""
+authentication:
+  type: basic
+  useISO88591: false
+  disabled: false
+  username: "{{ _.kong_username }}"
+  password: "{{ _.kong_password }}"
+metaSortKey: -1625787055832
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

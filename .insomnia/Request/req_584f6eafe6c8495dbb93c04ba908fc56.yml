@@ -1,0 +1,25 @@
+_id: req_584f6eafe6c8495dbb93c04ba908fc56
+type: Request
+parentId: fld_b1c0cc10f23945d1ae6398de35113c31
+modified: 1667236770181
+created: 1667236618548
+url: "{{ _.host }}/reset"
+name: reset DB
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":""}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1667236618548
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

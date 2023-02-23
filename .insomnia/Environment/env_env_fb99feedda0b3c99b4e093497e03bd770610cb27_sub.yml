@@ -1,0 +1,18 @@
+_id: env_env_fb99feedda0b3c99b4e093497e03bd770610cb27_sub
+type: Environment
+parentId: env_fb99feedda0b3c99b4e093497e03bd770610cb27
+modified: 1661806021873
+created: 1661800873931
+name: OpenAPI env
+data:
+  scheme: http
+  base_path: ""
+  host: blog-service.se-kong-mesh.svc:3000
+dataPropertyOrder:
+  "&":
+    - scheme
+    - base_path
+    - host
+color: null
+isPrivate: false
+metaSortKey: 1661800873931

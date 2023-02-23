@@ -1,0 +1,25 @@
+on:
+  push:
+    paths:
+      - 'mesh-demo/**'
+jobs:
+  deploy_to_clouds:
+    runs-on: ubuntu-latest
+    name: Deploying Kong Configuration
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Setup node
+      uses: actions/setup-node@v2.2.0
+      with:
+        node-version: "12"
+    - name: Apply configuration cluster
+      uses: ameydev/gke-kubectl-action@master
+      env:
+        SHA: ${{ steps.short-sha.outputs.sha }}
+        APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
+        CLUSTER_NAME: ${{ secrets.CLUSTER_NAME }}
+        ZONE_NAME: ${{ secrets.ZONE_NAME }}
+        PROJECT_ID: ${{ secrets.PROJECT_ID }}
+      with:
+        args: apply -f ./mesh-demo/ -n se-kong-mesh

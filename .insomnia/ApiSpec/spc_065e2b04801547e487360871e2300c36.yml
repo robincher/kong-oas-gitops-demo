@@ -1,0 +1,86 @@
+_id: spc_065e2b04801547e487360871e2300c36
+type: ApiSpec
+parentId: wrk_aef9eca69f284518b83dbd1575d14b9d
+modified: 1676611071921
+created: 1625776793200
+fileName: blog
+contents: |
+  openapi: 3.0.0
+  info:
+    version: '2.2'
+    title: Blog
+    license:
+      name: Apache 2.0
+    description: 'Blog Service API'
+    contact:
+      name: Kong
+  servers:
+    - url: 'http://blog-service.se-kong-mesh.svc:3000'
+  # x-kong-plugin-rate-limiting-advanced:
+  #   enabled: true
+  #   config:
+  #     limit:
+  #     - 30
+  #     window_size:
+  #     - 30
+  #     identifier: ip
+  #     dictionary_name: kong_rate_limiting_counters
+  #     sync_rate: -1
+  #     namespace: random_auto_generated_string
+  #     strategy: redis
+  #     hide_client_headers: false
+  #     window_type: sliding
+  #     retry_after_jitter_max: 0
+  #     redis:
+  #       host: redis
+  #       port: 6379
+  # x-kong-plugin-openid-connect:
+  #   enabled: true
+  #   config:
+  #     issuer: https://konghq.okta.com
+  #     consumer_optional: true
+  #     client_id:
+  #     - OIDC_CLIENT_ID
+  #     client_secret:
+  #     - OIDC_CLIENT_SECRET
+  #     auth_methods:
+  #     - password
+  #     verify_parameters: false
+  #     ignore_signature:
+  #     - password
+  #     scopes:
+  #     - openid
+  paths:
+    '/blogs':
+      post:
+        summary: Add a blog
+        responses:
+          '200':
+            description: Blog
+      get:
+        summary: Get blogs
+        responses:
+          '200':
+            description: Blog
+    '/blogs/{id}':
+      get:
+        summary: Get a blog by id
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID of blog to use",
+            "required": true,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "style": "simple"
+          }
+        ]
+        responses: 
+          '200':
+            description: Blog
+contentType: yaml

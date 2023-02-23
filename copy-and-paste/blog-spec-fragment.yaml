@@ -1,0 +1,34 @@
+    x-kong-plugin-rate-limiting-advanced:
+      enabled: true
+      config:
+        limit:
+        - 20
+        window_size:
+        - 30
+        identifier: ip
+        dictionary_name: kong_rate_limiting_counters
+        sync_rate: -1
+        namespace: random_auto_generated_string
+        strategy: redis
+        hide_client_headers: false
+        window_type: sliding
+        retry_after_jitter_max: 0
+        redis:
+          host: redis
+          port: 6379
+    x-kong-plugin-openid-connect:
+      enabled: true
+      config:
+        issuer: https://konghq.okta.com
+        consumer_optional: true
+        client_id:
+        - OIDC_CLIENT_ID
+        client_secret:
+        - OIDC_CLIENT_SECRET
+        auth_methods:
+        - password
+        verify_parameters: false
+        ignore_signature:
+        - password
+        scopes:
+        - openid

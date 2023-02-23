@@ -1,0 +1,25 @@
+_id: req_42396191f60343cfb120291f6104a341
+type: Request
+parentId: fld_8854dd3a63284b3d9c89937958fd0e99
+modified: 1676605765140
+created: 1625787686173
+url: "{{ admin_api_url }}/plugins"
+name: Plugins
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_f65a811567b04ad498edaac8c68e4029
+    name: Kong-Admin-Token
+    value: kong123
+    description: ""
+authentication: {}
+metaSortKey: -1625787686173
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

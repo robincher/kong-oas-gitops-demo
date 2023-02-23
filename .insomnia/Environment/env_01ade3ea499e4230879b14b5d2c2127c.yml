@@ -1,0 +1,24 @@
+_id: env_01ade3ea499e4230879b14b5d2c2127c
+type: Environment
+parentId: env_fb99feedda0b3c99b4e093497e03bd770610cb27
+modified: 1676611034692
+created: 1625789046368
+name: Development
+data:
+  kong_username: ""
+  kong_password: ""
+  base_path: /blogs
+  proxy_path: http://proxy.flux.kongtest.net
+  admin_api_host: http://admin.flux.kongtest.net:8001
+  host: http://admin.flux.kongtest.net:8001
+dataPropertyOrder:
+  "&":
+    - kong_username
+    - kong_password
+    - base_path
+    - proxy_path
+    - admin_api_host
+    - host
+color: null
+isPrivate: false
+metaSortKey: 1625789046368
