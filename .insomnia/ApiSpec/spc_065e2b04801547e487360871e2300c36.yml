@@ -1,7 +1,7 @@
 _id: spc_065e2b04801547e487360871e2300c36
 type: ApiSpec
 parentId: wrk_aef9eca69f284518b83dbd1575d14b9d
-modified: 1680171661065
+modified: 1680171779262
 created: 1625776793200
 fileName: blog
 contents: |
@@ -16,23 +16,23 @@ contents: |
       name: Kong
   servers:
     - url: 'http://blog-service.se-kong-mesh.svc:3000'
-  x-kong-plugin-rate-limiting-advanced:
-    enabled: true
-    config:
-      limit:
-      - 30
-      window_size:
-      - 30
-      identifier: ip
-      dictionary_name: kong_rate_limiting_counters
-      sync_rate: -1
-      namespace: random_auto_generated_string
-      strategy: redis
-      hide_client_headers: false
-      window_type: sliding
-      retry_after_jitter_max: 0
-      redis:
-        host: redis
+  # x-kong-plugin-rate-limiting-advanced:
+  #   enabled: true
+  #   config:
+  #     limit:
+  #     - 30
+  #     window_size:
+  #     - 30
+  #     identifier: ip
+  #     dictionary_name: kong_rate_limiting_counters
+  #     sync_rate: -1
+  #     namespace: random_auto_generated_string
+  #     strategy: redis
+  #     hide_client_headers: false
+  #     window_type: sliding
+  #     retry_after_jitter_max: 0
+  #     redis:
+  #       host: redis
         port: 6379
   # x-kong-plugin-openid-connect:
   #   enabled: true
