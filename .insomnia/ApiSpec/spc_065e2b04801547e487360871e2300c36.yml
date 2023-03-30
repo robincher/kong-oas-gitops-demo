@@ -1,7 +1,7 @@
 _id: spc_065e2b04801547e487360871e2300c36
 type: ApiSpec
 parentId: wrk_aef9eca69f284518b83dbd1575d14b9d
-modified: 1680171779262
+modified: 1680171937915
 created: 1625776793200
 fileName: blog
 contents: |
@@ -33,7 +33,7 @@ contents: |
   #     retry_after_jitter_max: 0
   #     redis:
   #       host: redis
-        port: 6379
+  #       port: 6379
   # x-kong-plugin-openid-connect:
   #   enabled: true
   #   config:
