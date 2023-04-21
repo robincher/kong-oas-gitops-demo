@@ -1,13 +1,13 @@
 _id: spc_065e2b04801547e487360871e2300c36
 type: ApiSpec
 parentId: wrk_aef9eca69f284518b83dbd1575d14b9d
-modified: 1680572367782
+modified: 1682059783980
 created: 1625776793200
 fileName: blog
 contents: |
   openapi: 3.0.0
   info:
-    version: '2.2'
+    version: '2.3'
     title: Blog
     license:
       name: Apache 2.0
@@ -17,7 +17,7 @@ contents: |
   servers:
     - url: 'http://blog-service.se-kong-mesh.svc:3000'
   # x-kong-plugin-rate-limiting-advanced:
-  #   enabled: true
+  #   enabled: truex
   #   config:
   #     limit:
   #     - 30
