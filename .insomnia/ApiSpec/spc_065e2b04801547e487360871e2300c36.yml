@@ -1,13 +1,13 @@
 _id: spc_065e2b04801547e487360871e2300c36
 type: ApiSpec
 parentId: wrk_aef9eca69f284518b83dbd1575d14b9d
-modified: 1683621058902
+modified: 1684220946694
 created: 1625776793200
 fileName: blog
 contents: |
   openapi: 3.0.0
   info:
-    version: '2.4'
+    version: '2.2'
     title: Blog
     license:
       name: Apache 2.0
