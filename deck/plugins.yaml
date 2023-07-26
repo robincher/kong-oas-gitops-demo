@@ -1,6 +1,6 @@
 plugins:
 - name: rate-limiting-advanced
-  service: Blog
+  service: blog
   enabled: true
   config:
     limit:
@@ -19,7 +19,7 @@ plugins:
       host: redis
       port: 6379
 - name: openid-connect
-  service: Blog
+  service: blog
   enabled: true
   config:
     issuer: https://konghq.okta.com
