@@ -40,7 +40,7 @@ jobs:
     - name: Output OAS to file
       run: echo "${{ steps.blog-yaml.outputs.result }}" > blog-new.yaml
     - name: Generate new gateway configuration
-      run: inso generate config blog-new.yaml -o ./deck/kong-new.yaml --tags gitops --ci
+      run: deck file openapi2kong --spec blog-new.yaml --output-file ./deck/kong-new.yaml
     - name: Substitute plugin secrets
       uses: bluwy/substitute-string-action@v1
       id: plugins-deck
