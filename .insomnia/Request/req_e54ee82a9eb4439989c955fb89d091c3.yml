@@ -22,6 +22,7 @@ authentication:
   password: "{{ _.kong_password }}"
 metaSortKey: -1625787055832
 isPrivate: false
+pathParameters: []
 settingStoreCookies: true
 settingSendCookies: true
 settingDisableRenderRequestBody: false
